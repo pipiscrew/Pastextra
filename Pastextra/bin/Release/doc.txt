@@ -1,0 +1,23 @@
+place the two files on #program files# folder, run it once, will ask you to register it at explorer context menu, accept.
+
+after that, every time you right click into blank area to explorer window,
+you will have an extra option 'Pastextra'. When this clicked, will paste the 
+content of clipboard (text/image) to a new file to the current folder.
+
+feature - recognize when the clipboard holds a url and write an internet shortcut!
+
+v1.1
++when clipboard contains URL and 
+	shift is down and wkhtmltopdf.exe exists near Pastextra.exe the webpage will be saved as PDF.
+	ctrl is down and wkhtmltopdf.exe exists near Pastextra.exe  the webpage will be saved as PDF with dos console log visible.
+
+the wkhtmltopdf.exe can be found at https://wkhtmltopdf.org/downloads.html
+
+tested with wkhtmltopdf v0.12.4 (extract the setup.exe with 7zip, copy only the wkhtmltopdf.exe)
+
+--
+
+For uninstall run the application, will ask you to unregister from explorer context menu.
+
+
+ps dont delete the pastextra.ico, you will lose the icon from explorer context menu.
