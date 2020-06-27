@@ -23,7 +23,7 @@ namespace Pastextra
                 {
                     Process msbProcess = new Process();
                     msbProcess.StartInfo.FileName = Application.StartupPath + "\\wkhtmltopdf.exe";
-                    msbProcess.StartInfo.Arguments = "--title \"" + val + "\" \"" + val + "\" \"" + path  + DateTime.Now.ToString("yyyyMMddHHmmss") + ".pdf\"";
+                    msbProcess.StartInfo.Arguments = "--disable-javascript --title \"" + val + "\" \"" + val + "\" \"" + path + DateTime.Now.ToString("yyyyMMddHHmmss") + ".pdf\"";
                     msbProcess.StartInfo.UseShellExecute = false;
                     msbProcess.StartInfo.CreateNoWindow = (Control.ModifierKeys == Keys.Shift);
 
